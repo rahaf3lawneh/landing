@@ -97,6 +97,12 @@ body{
 }
 
     @media screen and (max-width: 400px){
+
+        .container{
+            width: calc(100% - 30px);
+            
+        }
+        
     
         .header .logo img{
             width: 20px;
