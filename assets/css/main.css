@@ -14,6 +14,7 @@ body{
     display: flex;
     align-items: center;
     gap: 3px;
+    flex-wrap: wrap;
 }
 
 .header .logo img{
@@ -24,10 +25,14 @@ body{
     font-family: "Roboto", sans-serif;
     color: var(--maincolor);
 }
+.menu{
+    display: none;
+}
 
 .nav ul{
     display: flex;
     gap: 16px;
+    flex-wrap: wrap;
 
 }
 
@@ -44,6 +49,7 @@ body{
     display:flex;
     align-items: center;
     gap: 10px;
+    flex-wrap: wrap;
 }
    
 
@@ -67,3 +73,38 @@ body{
     background-color: var(--maincolor);
 
 }
+
+/* media header */
+
+@media screen and (max-width: 965px){
+    .nav{
+        display: none;
+    }
+    
+    .menu{
+        display: block;
+        order: 2;
+    }
+    
+}
+
+
+@media screen and (max-width: 622px){
+    
+    .auth{
+        display: none;
+    }
+}
+
+    @media screen and (max-width: 400px){
+    
+        .header .logo img{
+            width: 20px;
+        }
+
+        .header .logo a{
+            font-size: 15px;
+        }
+   
+}
+  /*end of main header*/
