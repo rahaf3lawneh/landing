@@ -122,6 +122,86 @@ body {
 /*end of main header*/
 
 
+/*statr services*/
+.services{
+    padding: 316px 0 60px 138px;
+    background-color: #F5F5F5;
+}
+.services .row{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 460px;
+}
+
+.services span{
+    color: var(--maincolor);
+}
+.about-offers{
+    width: 300px;
+}
+
+.about-offers h2{
+    color: #141E32;
+    width: 200px;
+   /* margin-top: -96px;*/
+    font-size: 30px;
+}
+.about-offers p{
+    color: #969696;
+    width: 369px;
+    margin-top: 20px ;
+
+}
+
+.offers{
+    flex-grow: 1;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+   
+}
+.offers-item{
+    width: 200px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 20px;
+    background-color: var(--maincolor);
+    border-radius: 10px;
+    padding: 9px 40px;
+   
+}
+
+.offers-item img{
+    width: 35px;
+    height: 35px;
+    background-color: #fff;
+    border-radius: 50%;
+    padding: 6px;
+}
+
+.offers-item h2{
+    color: #fff;
+
+}
+
+.offers-item p{
+    color: #DDDDDD;
+}
+
+/*end services*/
+
+/*media services*/
+
+@media screen and (max-width: 1880px) {
+   
+    .services .row{
+        gap: 100px;
+    }
+
+}
+/*end of media services*/
+
 
 /* Testimonials start */
 
