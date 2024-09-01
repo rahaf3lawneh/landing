@@ -60,7 +60,7 @@ body {
     font-family: var(--subfont);
     border: 2px solid #545be8;
     border-radius: 10px;
-    padding: 7.3541765213012695px 38.18113136291504px;
+    padding: 10.354177px 43.181131px;
     font-weight: 700;
     font-size: 13px;
     line-height: 12px;
@@ -120,6 +120,162 @@ body {
 }
 
 /*end of main header*/
+/* start begins */
+
+.begins{
+    background-color: #fff;
+    padding: 94px ;
+}
+.begins .row {
+    gap: 20px;
+}
+
+.intro span{
+    color: var(--maincolor);
+  
+}
+#Letsbeings-word{
+
+    font-family: var(--subfont);
+    font-size: 20px;
+}
+
+#begins-word{
+    font-weight: 700;
+}
+
+.intro{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 15px;
+    width: 1209px;
+}
+
+.intro h2{
+    color: #141E32;
+    
+    width: 338px;
+    font-size: 39px;
+}
+
+.intro p{
+    color: #969696;
+    margin-bottom: 36px;
+}
+
+.join{
+    display: flex;
+    flex-wrap: wrap;
+   
+}
+
+.join .register{
+    background-color: var(--maincolor);
+    color: #fff;
+    font-family: var(--subfont);
+    padding: 13.354177px 40.181131px;
+    border-radius: 15px;
+
+}
+
+.intro-vedio{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10.354177px 43.181131px;
+    gap: 6px;
+    
+}
+
+.intro-vedio img{
+    width: 30px;
+    height: 30px;
+}
+
+.intro-vedio .play-vedio{
+    color: #141E32;
+    font-family: var(--subfont);
+    font-size: 20px;
+
+}
+.student-img{
+    display: flex;
+    flex-wrap: wrap;
+    flex-grow: 1;
+   
+}
+.student-img img{
+    width: 100%;
+    
+
+}
+
+/* end begins */
+/*meadia begins*/
+@media screen and (max-width: 1840px){
+    .intro{
+        width: 66%;
+    }
+    
+}
+
+
+@media screen and (max-width: 1087px){
+    .intro{
+        width: 50%;
+    }
+
+    .join .register{
+        padding: 15.354177px 71.181131px;
+    }
+    
+    .intro-vedio{
+        padding: 14.354177px 29.181131px;
+    }
+
+    
+}
+
+@media screen and (max-width: 890px){
+    .intro{
+        width: 100%;
+        order: 1;
+    }
+    .student-img img{
+        width: 54%;
+        margin: auto;
+    }
+}
+
+    @media screen and (max-width: 500px){
+        
+       .intro h2{
+        font-size: 20px;
+        width: 252px;
+       }
+    
+       .intro p{
+        width: 200px;
+       }
+       .student-img img{
+        width: 73%;
+       }
+
+       .begins{
+        padding: 20px;
+       }
+
+       #Letsbeings-word {
+        font-size: 11px;
+    
+
+           }   
+         }
+
+
+
+ 
+/*end of meadia begins*/
 
 
 /*statr services*/
@@ -148,7 +304,7 @@ body {
 }
 .about-offers p{
     color: #969696;
-    width: 369px;
+  /*  width: 369px;*/
     margin-top: 20px ;
 
 }
@@ -197,6 +353,19 @@ body {
    
     .services .row{
         gap: 100px;
+    }
+    .offers-item{
+        padding: 4px 20px;
+    }
+
+}
+
+@media screen and (max-width: 600px) {
+    .services{
+        padding: 20px;
+    }
+    .offers-item {
+        margin: auto;
     }
 
 }
