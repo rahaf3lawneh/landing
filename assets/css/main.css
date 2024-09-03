@@ -10,6 +10,9 @@ body {
 .header {
     background-color: #fff;
     padding: 20px 20px;
+    position: fixed;
+    width: 100%;
+    z-index: 1;
 }
 
 .logo {
@@ -488,6 +491,10 @@ body {
         width: 240px;
     }
 
+    .info span{
+        font-size: 11px;
+    }
+
     
 }
 @media screen and (max-width:1000px) {
@@ -517,12 +524,218 @@ body {
  }
 /* end of media select-course*/
 
+/* start courses*/
+.courses{
+    padding: 50px 0;
+    
+}
+
+.courses .row{
+    gap: 500px;
+    align-items: flex-start;
+}
+
+.course-item,
+.description{
+    width: calc((100% - 500px) /2);
+}
+
+.course-item{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.course{
+    width: calc((100% - 20px) /2);
+    
+}
+.course-card img{
+    width: 100%;
+    filter: brightness(70%);
+    display: flex;
+    flex-wrap: wrap;
+}
+.course-card{
+    position: relative;
+
+}
+
+.course-info{
+    position: absolute;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    top: 0;
+    bottom: -11px;
+    left: -20px;
+    right: -15px;
+    color: #fff;
+    padding: 20px;
+    align-items: self-start;
+}
+
+#best-course{
+    background-color: var(--maincolor);
+    padding: 6px;
+}
+#price{
+    align-self: flex-end;
+    font-size: 22px;
+    font-weight: 600;
+}
+.details{
+    background-color: #fff;
+    box-shadow: 9px 11.437575px 17.437575px rgba(0, 0, 0, 0.5);
+    padding: 7px;
+}
+.row1{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.row1 h2{
+    color: #141E32;
+
+}
+.row1 span{
+    color: var(--maincolor);
+}
+.row2{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    color: #969696;
+}
+.description{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 10px;
+}
+.description span{
+    color: var(--maincolor);
+    font-family: var(--subfont);
+}
+.description h2{
+    color: #141E32;
+    width: 100px;
+    font-size: 50px;
+}
+.description p{
+    color: #969696;
+    margin-bottom: 23px;
+    width: 420px;
+    font-size: 20px;
+}
+.description a{
+    background-color: var(--maincolor);
+    color: #fff;
+    font-family: var(--subfont);
+    border: 2px solid #545be8;
+    border-radius: 10px;
+    padding: 11px 40px;
+    font-weight: 700;
+    font-size: 16px;
+     line-height: 12px;
+     width: 51px;
+}
+
+
+
+
+/* end courses */
+/*start media course*/
+
+@media screen  and (max-width: 1700px){
+    #best-course{
+        padding: 2px;
+        font-size: 11px;
+    }
+    #price{
+        font-size: 15px;
+    }
+    .row1 h2{
+        font-size: 15px;
+    }
+    .row1 span, 
+    .row2{
+        font-size: 12px
+    }
+    
+    
+}
+
+@media screen and (max-width:1600px) {
+    .courses .row{
+        gap: 100px;
+    }
+    .course-item{
+        width: 60%;
+        flex-wrap: wrap;
+    }
+    .description{
+        width: 100%;   
+    }
+    }
+
+
+   @media screen and (max-width:870px) {
+    .course-item{
+        width: 100%;
+    }
+    
+    
+        .course-item{
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        .description p{
+            width: 330px;
+            font-size: 14px;
+        }
+        .description h2{
+            font-size: 28px;
+
+        }
+        .description span{
+            font-size: 11px;
+        }
+    }
+    @media screen and (max-width: 488px) {
+        .course-info{
+            top: -13px;
+        }
+        #price{
+            font-size: 11px;
+        }
+        .row1 h2{
+            font-size: 12px;
+
+        }
+        .row1 span{
+            font-size: 9px;
+
+        }
+        
+    }
+    @media screen and (max-width: 420px) {
+        .row1{
+            flex-direction: column;
+        }
+        .row2{
+            gap: 8px;
+        }
+    
+    }
+/*end media courses*/
+
 
 /* Testimonials start */
 
 .testimonials {
     padding: 50px 0;
     background-color: #fff;
+    
 }
 
 .testimonials h2 {
@@ -542,6 +755,17 @@ body {
     margin-top: 30px;
     box-sizing: border-box;
     width: calc((100% - 40px)/2);
+    position: relative;
+}
+.testimonial::after{
+    content: '';
+    position: absolute;
+    border-top: 50px solid #F4F4F4;
+    border-bottom: 50px solid transparent;
+    border-left: 50px solid transparent;
+    border-right: 50px solid #F4F4F4;
+    right: 0;
+    top: 0;
 }
 
 .user-info {
