@@ -104,11 +104,14 @@ body {
     }
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 405px) {
 
     .container {
         width: calc(100% - 30px);
 
+    }
+    .menu{
+        margin-right: 30px;
     }
 
 
@@ -245,7 +248,7 @@ body {
         order: 1;
     }
     .student-img img{
-        width: 54%;
+        width: 73%;
         margin: auto;
     }
 }
@@ -261,7 +264,7 @@ body {
         width: 200px;
        }
        .student-img img{
-        width: 73%;
+        margin-top: 60px;
        }
 
        .begins{
